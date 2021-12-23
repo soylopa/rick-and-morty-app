@@ -1,13 +1,14 @@
 import React from "react";
 
-const Header = ({filter}) => {
+const Header = ({title}) => {
     return (
-        <>
+        <div className="justify-content-center">
         <h2>
-            {filter}
+            {title}
         </h2>
         <input placeholder="search by filter"/> 
-        </>
+        <a>Clear filter</a>
+        </div>
     )
 }
-export default Header ();
+export default Header;
