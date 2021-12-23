@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import CharactersList from './components/Characters-list';
 
 
 function App() {
-  const [character, setCharacters] = useState ([]); 
+  const [characters, setCharacters] = useState ([]); 
 
   const initialUrl = "https://rickandmortyapi.com/api/character"
 
@@ -21,7 +22,8 @@ function App() {
   return (
     <>
       <Navbar brand="Rick and Morty NFT"/>
-      <Header title="Filter"/>
+      <Header title="Characters"/>
+      <CharactersList characters={characters}/>
     </>
   );
 }
