@@ -8,7 +8,15 @@ const CharactersList = ({characters = []}) => {
                 characters.map((item,index) => (
                     <div key={index} className="col">
                         <div className="card" id="data">
-                            <img src={item.image} alt="avatar-image" />
+                            <img src={item.image} className="rounded-circle" alt="avatar-image" />
+                            <br />
+                            <div className="card-boby">
+                                <h4 className="card-tite d-flex justify-content-center">
+                                    {item.name}
+                                </h4>
+                                <p className="d-flex justify-content-center"> {item.location.name}</p>
+                                <p className="d-flex justify-content-center"> {item.status}</p>
+                            </div>
                         </div>
                     </div>
                 ))
