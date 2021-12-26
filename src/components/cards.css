@@ -6,3 +6,16 @@
         min-width: 50px;
         border-radius: 50%;
 }
+
+#data-card {
+        display: flex;
+        justify-content: center;
+
+}
+
+#data-card button {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+}

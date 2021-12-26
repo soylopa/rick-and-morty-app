@@ -6,16 +6,18 @@ const CharactersList = ({characters = []}) => {
         <div className="row">
             {
                 characters.map((item,index) => (
-                    <div key={index} className="col">
+                    <div key={index} className="col mb-4">
                         <div className="card" id="data">
                             <img src={item.image} className="rounded-circle" alt="avatar-image" />
                             <br />
-                            <div className="card-boby">
+                            <div className="card-body mt-5">
                                 <h4 className="card-tite d-flex justify-content-center">
                                     {item.name}
                                 </h4>
-                                <p className="d-flex justify-content-center"> {item.location.name}</p>
-                                <p className="d-flex justify-content-center"> {item.status}</p>
+                                <p id="data-card"> {item.location.name}</p>
+                                <p id="data-card"> {item.species}</p>
+                                <p id="data-card"> {item.status}</p>
+                                <button id="data-card">Add to chart</button>
                             </div>
                         </div>
                     </div>
