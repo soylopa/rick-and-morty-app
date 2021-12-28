@@ -17,7 +17,7 @@ const CharactersList = ({characters = []}) => {
                                 <p id="data-card"> {item.location.name}</p>
                                 <p id="data-card"> {item.species}</p>
                                 <p id="data-card"> {item.status}</p>
-                                <button id="data-card">Add to chart</button>
+                                <button type="button" class="btn btn-outline-secondary" id="data-card">Secondary</button>
                             </div>
                         </div>
                     </div>

@@ -5,8 +5,7 @@ const Header = ({title}) => {
         <div className="justify-content-center">
         <h2>
             {title}
-        </h2>
-        <input placeholder="search by filter"/> 
+        </h2> 
         <a>Clear filter</a>
         </div>
     )
